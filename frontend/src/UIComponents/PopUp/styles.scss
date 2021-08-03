@@ -1,0 +1,39 @@
+.pop-up{
+    width: 500px;
+    max-width: 80vw;
+    border-radius: 8px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: white;
+    font-family:'Roboto', sans-serif;
+    padding: 10px;
+    transition: 0.5s;
+    z-index: 16;
+}
+.pop-up-title{
+    font-weight: bold;
+    border-bottom: 3px white solid;
+    margin: 8px;
+}
+.pop-up-message{
+    font-size: 12px;
+    margin: 8px;
+}
+.pop-up-close-icon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.pop-up-show{
+    top:10px
+}
+.pop-up-loader{
+    background-color: white;
+    height: 4px;
+    transition: 1s;
+}
+.hide-pop-up{
+    top: -100px !important;
+}

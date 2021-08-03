@@ -1,0 +1,134 @@
+$field-width:400px;
+.dashboard-wrapper{
+    .dashboard-header{
+        background: rgb(21, 81, 179);
+        display: flex;
+        justify-content: space-between;
+        padding: 4px;
+        >div:nth-child(1){
+            font-size: 18px;
+            color: white;
+            border-radius: 4px;
+            padding: 4px;
+        }
+        >div:nth-child(2){
+            font-size: 14px;
+            color: white;
+            background: rgb(189, 34, 6);
+            border-radius: 4px;
+            width: 100px;
+            display: flex;
+            justify-content: space-evenly;
+            cursor: pointer;
+        }
+    }
+    .tab-navs{
+        display: flex;
+        position: relative;
+        >.each-nav{
+            flex: 0.5;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.4em;
+            cursor: pointer;
+            padding: 4px;
+        }
+        >.each-nav:hover{
+            transition: 0.2s;
+            color: rgb(8, 43, 93);
+        }
+        .divider{
+            width: 2px;
+            height: 24px;
+            background: grey;
+            margin-top: 5px;
+            position: absolute;
+            left:49vw
+        }
+        .tab-indicator-bar{
+            position: absolute;
+            width: 30%;
+            height: 4px;
+            background: rgb(3, 39, 84);
+            bottom: 0px;
+            transition: 0.4s;
+        }
+    }
+    .dashboard-tab-wrapper{
+        height: calc(100vh - 70px);
+        @media(max-height:420px){
+            height: auto;
+        }
+        .new-user-form-container{
+            label{
+                font-size: 14px;
+            }
+            input{
+                border-bottom: 2px grey solid;
+                width: $field-width;
+                max-width: 90vw;
+                padding: 4px;
+                margin: 10px auto;
+            }
+            button{
+                background: rgb(40, 72, 111);
+                color: white;
+                padding: 5px;
+                width: 100px;
+                cursor: pointer;
+                border: 2px solid rgb(40, 72, 111);
+            }
+            button:hover{
+                transition: 0.2s;
+                filter: brightness(140%);
+            }
+        }
+        .user-account-container{
+            padding: 5px;
+            width: 100%;
+            height: 100%;
+            overflow-y: scroll;
+            .loading-state{
+                background: rgb(96, 96, 96);
+                color: white;
+                width: 200px;
+                margin: 100px auto;
+                flex-direction: column;
+                border-radius: 6px;
+                padding:8px;
+                text-align: center;
+            }
+            .eachUser{
+                box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;                width: 500px;
+                max-width: 90vw;
+                margin: 20px auto;
+                padding: 6px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .user-info>p{
+                    margin-top: 6px;
+                }
+                .delete-btn{
+                    text-align: center;
+                    background: rgb(113, 61, 61);
+                    color: white;
+                    padding: 4px;
+                    cursor: pointer;
+                    border-radius: 4px;
+                    >i{
+                        font-size: 14px;
+                    }
+                    >p{
+                        font-size: 12px;
+                    }
+                }
+                .delete-btn:hover{
+                    transition: 0.2s;
+                    filter: brightness(140%);
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Assistant';
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.all-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input,button{
+    display: block;
+    margin-top: 14px;
+    outline: none;
+    border: none;
+}
+::-webkit-scrollbar {
+    height: 4px;
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background-color: rgb(251, 251, 251);
+  }
+::-webkit-scrollbar-thumb {
+    background: rgb(146, 204, 245); 
+    border-radius: 20px;
+}
